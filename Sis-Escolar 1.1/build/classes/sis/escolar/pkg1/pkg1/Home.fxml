@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="213.0" prefWidth="408.0" style="-fx-background-color: #228B22;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sis.escolar.pkg1.pkg1.HomeController">
+   <children>
+      <Label layoutX="39.0" layoutY="143.0" text="Usuário:" textFill="#dddada">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLogin" layoutX="101.0" layoutY="140.0">
+         <effect>
+            <Glow level="0.08" />
+         </effect>
+      </TextField>
+      <Label layoutX="50.0" layoutY="170.0" text="Senha:" textFill="#dddada">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtSenha" layoutX="101.0" layoutY="168.0" />
+      <Button fx:id="btnLogar" layoutX="275.0" layoutY="151.0" mnemonicParsing="false" onAction="#Logar" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #ffff;" text="Entrar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="93.0" fitWidth="114.0" layoutX="261.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../br/com/sisescolar/images/escola.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="44.0" text="Sis-Escola" textFill="WHITE">
+         <font>
+            <Font name="Aachen Bold BT" size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
