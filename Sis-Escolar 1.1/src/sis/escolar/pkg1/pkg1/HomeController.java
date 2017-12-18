@@ -60,6 +60,8 @@ public class HomeController implements Initializable {
             // se existir usuario e senha correspondente
             if (rs.next()) {
                 
+                conexao.close(); 
+                
             
         
         
