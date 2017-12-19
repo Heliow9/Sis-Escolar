@@ -64,7 +64,8 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-
+        // inclusao
+        // inclusao
         conexao = ModuloConexao.conector();
         if (conexao != null) {
             lblBanco.setText("Banco Conectado");
