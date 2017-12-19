@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.sisescolar.dao;
+package br.com.sisescolar11.dao;
 
 import java.sql.*;
 

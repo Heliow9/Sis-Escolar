@@ -12,7 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import java.sql.*;
-import br.com.sisescolar.dao.ModuloConexao;
+import br.com.sisescolar11.dao.ModuloConexao;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javax.swing.JOptionPane;
@@ -26,7 +26,7 @@ public class FXMLDocumentController implements Initializable {
     Connection conexao = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
-
+    //  para cada variavel tem que chamar a FXML e criar como private
     @FXML
     private JFXTextField txtUsuario;
     @FXML
@@ -64,7 +64,7 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-
+        // inicializador da conexao
         conexao = ModuloConexao.conector();
         if (conexao != null) {
             lblBanco.setText("Banco Conectado");
