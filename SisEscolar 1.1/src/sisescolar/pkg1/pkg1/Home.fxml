@@ -27,13 +27,16 @@
             <Font size="34.0" />
          </font>
       </Label>
-      <JFXTextField id="txtUsuario" fx:id="txtUsuario" focusColor="WHITE" labelFloat="true" layoutX="268.0" layoutY="238.0" prefHeight="25.0" prefWidth="268.0" promptText=" Usuario" unFocusColor="#f5f3f3">
+      <JFXTextField id="txtUsuario" fx:id="txtUsuario" focusColor="WHITE" labelFloat="true" layoutX="268.0" layoutY="238.0" prefHeight="25.0" prefWidth="268.0" promptText=" Usuário" unFocusColor="#f5f3f3">
          <font>
             <Font size="13.0" />
          </font>
       </JFXTextField>
-      <JFXPasswordField fx:id="txtSenha" focusColor="WHITE" labelFloat="true" layoutX="268.0" layoutY="287.0" prefHeight="25.0" prefWidth="268.0" promptText=" Senha" unFocusColor="#fcfafa" />
-      <JFXButton fx:id="btnEntrar" layoutX="365.0" layoutY="324.0" onAction="#clicou" style="-fx-background-color: #fff;" text="Entrar" textFill="#096113">
+      <JFXPasswordField fx:id="txtSenha" focusColor="WHITE" labelFloat="true" layoutX="268.0" layoutY="287.0" prefHeight="25.0" prefWidth="268.0" promptText=" Senha" unFocusColor="#fcfafa">
+         <font>
+            <Font size="13.0" />
+         </font></JFXPasswordField>
+      <JFXButton fx:id="btnEntrar" layoutX="365.0" layoutY="336.0" onAction="#clicou" style="-fx-background-color: #fff;" text="Entrar" textFill="#096113">
          <font>
             <Font name="Candara Bold" size="18.0" />
          </font>
@@ -51,5 +54,15 @@
             <Font name="Bodoni MT" size="18.0" />
          </font>
       </Label>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="536.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../br/com/sisescola/icons/if_lock_115716.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="536.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../br/com/sisescola/icons/if_lock_115716.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
