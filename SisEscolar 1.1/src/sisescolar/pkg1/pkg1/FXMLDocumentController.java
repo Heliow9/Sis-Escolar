@@ -13,8 +13,18 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import java.sql.*;
 import br.com.sisescolar11.dao.ModuloConexao;
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
 /**
@@ -26,6 +36,8 @@ public class FXMLDocumentController implements Initializable {
     Connection conexao = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
+    @FXML
+    private StackPane stack;
     //  para cada variavel tem que chamar a FXML e criar como private
     @FXML
     private JFXTextField txtUsuario;
@@ -33,6 +45,9 @@ public class FXMLDocumentController implements Initializable {
     private JFXPasswordField txtSenha;
     @FXML
     private Label lblBanco;
+    @FXML
+    private JFXButton btnEntrar;
+
     @FXML
     private void clicou(ActionEvent event) {
 
@@ -49,6 +64,9 @@ public class FXMLDocumentController implements Initializable {
             if (rs.next()) {
 
                 System.out.println("Você entrou");
+                telaprincipal();
+                Stage stage = (Stage) btnEntrar.getScene().getWindow(); //Obtendo a janela atual
+                stage.close(); //Fechando o Stage
 
             } else {
                 JOptionPane.showMessageDialog(null, "Usuario e/ou senha incorreto");
@@ -61,16 +79,45 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
+    @FXML
+    public void telaprincipal() {
+        try {
+
+            Parent root = FXMLLoader.load(getClass().getResource("TelaPrincipal.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root, 400, 240);
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+
         // TODO
-        // inicializador da conexao
+        // inicializador da conexao 1.1
         conexao = ModuloConexao.conector();
         if (conexao != null) {
             lblBanco.setText("Banco Conectado");
         } else {
-             lblBanco.setText("Banco Desconectado");
+            lblBanco.setText("Banco Desconectado");
         }
+
+    }
+    // responsável por chamar a tela
+
+    public Node getNode(String node) {
+        Node no = null;
+        try {
+            no = FXMLLoader.load(getClass().getResource(node));
+        } catch (Exception e) {
+        }
+        return no;
+
     }
 
 }

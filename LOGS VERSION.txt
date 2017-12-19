@@ -1,0 +1,1 @@
+versão 1.1.1 - adicionado a função fecha tela login apos confirmação de usuário e senha

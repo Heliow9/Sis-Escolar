@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="839.0" style="-fx-background-color: #006400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="840.0" style="-fx-background-color: #006400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.FXMLDocumentController">
    <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="312.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
          <image>
