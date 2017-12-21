@@ -6,44 +6,28 @@
 package sisescolar.pkg1.pkg1;
 
 import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import java.sql.*;
 import br.com.sisescolar11.dao.ModuloConexao;
-<<<<<<< HEAD
-import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
-import com.gluonhq.impl.charm.a.b.b.e;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-import com.jfoenix.effects.JFXDepthManager;
 import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
-import java.io.IOException;
 import javafx.application.Platform;
-=======
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
->>>>>>> 310ece5e533d6d023706d80625c76d2f337bde70
+import java.util.ResourceBundle;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-<<<<<<< HEAD
-import javafx.scene.control.Button;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.DragEvent;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-=======
->>>>>>> 310ece5e533d6d023706d80625c76d2f337bde70
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
@@ -58,7 +42,6 @@ public class FXMLDocumentController implements Initializable {
     PreparedStatement pst = null;
     ResultSet rs = null;
     @FXML
-<<<<<<< HEAD
     private AnchorPane paneGeral2;
     @FXML
     private AnchorPane cardPane1;
@@ -66,10 +49,10 @@ public class FXMLDocumentController implements Initializable {
     private AnchorPane cardPane;
     @FXML
     private JFXButton btnCancelar;
-=======
+
     private StackPane stack;
     //  para cada variavel tem que chamar a FXML e criar como private
->>>>>>> 310ece5e533d6d023706d80625c76d2f337bde70
+
     @FXML
     private JFXTextField txtUsuario;
     @FXML
@@ -78,14 +61,11 @@ public class FXMLDocumentController implements Initializable {
     private Label lblBanco;
     @FXML
     private JFXButton btnEntrar;
-<<<<<<< HEAD
     @FXML
     private MaterialDesignIconView btnFechar;
 
     public FXMLDocumentController() {
     }
-=======
->>>>>>> 310ece5e533d6d023706d80625c76d2f337bde70
 
     @FXML
     private void clicou(ActionEvent event) {
@@ -119,19 +99,8 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
-<<<<<<< HEAD
-    public void telaprincipal() {
-        try {
 
-            Parent root = FXMLLoader.load(getClass().getResource("TelaPrincipal.fxml"));
 
-            Stage stage = new Stage();
-            stage.resizableProperty().setValue(Boolean.FALSE);
-            Scene scene = new Scene(root, 560, 480);
-            stage.setScene(scene);
-            stage.show();
-
-=======
     @FXML
     public void telaprincipal() {
         try {
@@ -144,7 +113,6 @@ public class FXMLDocumentController implements Initializable {
             stage.setScene(scene);
             stage.show();
 
->>>>>>> 310ece5e533d6d023706d80625c76d2f337bde70
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -174,7 +142,6 @@ public class FXMLDocumentController implements Initializable {
         }
         return no;
 
-<<<<<<< HEAD
     }
 
     @FXML
@@ -185,8 +152,8 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void clicarBtnFechar(MouseEvent event) {
         Platform.exit();
-=======
->>>>>>> 310ece5e533d6d023706d80625c76d2f337bde70
     }
+
+
 
 }
