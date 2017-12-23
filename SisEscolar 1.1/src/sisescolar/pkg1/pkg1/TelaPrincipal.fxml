@@ -1,5 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.TelaPrincipalController">
+  <children>
+    <MenuBar fx:id="mBar" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Cadastro">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Usuário" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Escola" />
+            <MenuItem mnemonicParsing="false" text="Aluno" />
+            <MenuItem mnemonicParsing="false" text="Pais" />
+            <MenuItem mnemonicParsing="false" text="Professor" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Disciplina" />
+            <MenuItem mnemonicParsing="false" text="Ano Letivo" />
+            <MenuItem mnemonicParsing="false" text="Turmas" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Buscas">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Professores" />
+            <MenuItem mnemonicParsing="false" text="Alunos" />
+            <MenuItem mnemonicParsing="false" text="Pais" />
+            <MenuItem mnemonicParsing="false" text="Disciplinas" />
+            <MenuItem mnemonicParsing="false" text="Turmas" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Relatórios">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Pagamentos" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <Menu mnemonicParsing="false" text="Aprovações">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Aprovados" />
+                        <MenuItem mnemonicParsing="false" text="Reprovados" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Consulta Individual" />
+                    </items>
+                  </Menu>
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="Emissão">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Boleto de Pagamento" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <Menu mnemonicParsing="false" text="Documentos">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Matrícula" />
+                        <MenuItem mnemonicParsing="false" text="Declaração" />
+                    </items>
+                  </Menu>
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Cobrança">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Boleto Avulso" />
+                  <MenuItem mnemonicParsing="false" text="Acompanhar Pagamento" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Sobre">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu fx:id="mSair" mnemonicParsing="false" onAction="#clicouCancelar" text="Sair" />
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
+=======
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -10,3 +100,4 @@
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="560.0" prefWidth="840.0" style="-fx-background-color: #006400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.TelaPrincipalController">
     
 </AnchorPane>
+>>>>>>> 310ece5e533d6d023706d80625c76d2f337bde70

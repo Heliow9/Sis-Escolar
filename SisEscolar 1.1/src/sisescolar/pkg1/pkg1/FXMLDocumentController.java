@@ -13,16 +13,36 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import java.sql.*;
 import br.com.sisescolar11.dao.ModuloConexao;
+
+import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
+import com.gluonhq.impl.charm.a.b.b.e;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import com.jfoenix.effects.JFXDepthManager;
+import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
+import java.io.IOException;
+import javafx.application.Platform;
+
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+
+import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.DragEvent;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
@@ -37,8 +57,18 @@ public class FXMLDocumentController implements Initializable {
     PreparedStatement pst = null;
     ResultSet rs = null;
     @FXML
+
+    private AnchorPane paneGeral2;
+    @FXML
+    private AnchorPane cardPane1;
+    @FXML
+    private AnchorPane cardPane;
+    @FXML
+    private JFXButton btnCancelar;
+
     private StackPane stack;
     //  para cada variavel tem que chamar a FXML e criar como private
+
     @FXML
     private JFXTextField txtUsuario;
     @FXML
@@ -49,11 +79,18 @@ public class FXMLDocumentController implements Initializable {
     private JFXButton btnEntrar;
 
     @FXML
+    private MaterialDesignIconView btnFechar;
+
+    public FXMLDocumentController() {
+    }
+
+    @FXML
     private void clicou(ActionEvent event) {
 
         String sql = "select * from tbusuarios where usuario=? and senha=?";
         try {
             // capturando oque ta sendo gitiado na caixa de texto usuario 
+
             pst = conexao.prepareStatement(sql);
             pst.setString(1, txtUsuario.getText());
             pst.setString(2, txtSenha.getText());
@@ -119,6 +156,17 @@ public class FXMLDocumentController implements Initializable {
         } catch (Exception e) {
         }
         return no;
+
+    }
+
+    @FXML
+    private void clicouCancelar(ActionEvent event) {
+        Platform.exit();
+    }
+
+    @FXML
+    private void clicarBtnFechar(MouseEvent event) {
+        Platform.exit();
 
     }
 
