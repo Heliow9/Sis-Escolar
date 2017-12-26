@@ -6,35 +6,43 @@
 package sisescolar.pkg1.pkg1;
 
 import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import java.sql.*;
 import br.com.sisescolar11.dao.ModuloConexao;
+<<<<<<< HEAD
 
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
 import com.gluonhq.impl.charm.a.b.b.e;
+=======
+>>>>>>> efe470ccb6f77d49f53000c097fc14d1c6534caf
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-import com.jfoenix.effects.JFXDepthManager;
 import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
-import java.io.IOException;
 import javafx.application.Platform;
+<<<<<<< HEAD
 
+=======
+>>>>>>> efe470ccb6f77d49f53000c097fc14d1c6534caf
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+=======
+import java.util.ResourceBundle;
+>>>>>>> efe470ccb6f77d49f53000c097fc14d1c6534caf
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+<<<<<<< HEAD
 
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
@@ -43,6 +51,10 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
+=======
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+>>>>>>> efe470ccb6f77d49f53000c097fc14d1c6534caf
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
@@ -57,7 +69,10 @@ public class FXMLDocumentController implements Initializable {
     PreparedStatement pst = null;
     ResultSet rs = null;
     @FXML
+<<<<<<< HEAD
 
+=======
+>>>>>>> efe470ccb6f77d49f53000c097fc14d1c6534caf
     private AnchorPane paneGeral2;
     @FXML
     private AnchorPane cardPane1;
@@ -77,7 +92,10 @@ public class FXMLDocumentController implements Initializable {
     private Label lblBanco;
     @FXML
     private JFXButton btnEntrar;
+<<<<<<< HEAD
 
+=======
+>>>>>>> efe470ccb6f77d49f53000c097fc14d1c6534caf
     @FXML
     private MaterialDesignIconView btnFechar;
 
@@ -116,6 +134,11 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> efe470ccb6f77d49f53000c097fc14d1c6534caf
     @FXML
     public void telaprincipal() {
         try {
@@ -167,7 +190,12 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void clicarBtnFechar(MouseEvent event) {
         Platform.exit();
+<<<<<<< HEAD
 
+=======
+>>>>>>> efe470ccb6f77d49f53000c097fc14d1c6534caf
     }
+
+
 
 }
