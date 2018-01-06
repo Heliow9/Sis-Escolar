@@ -1,90 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.input.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.TelaPrincipalController">
-  <children>
-    <MenuBar fx:id="mBar" VBox.vgrow="NEVER">
-      <menus>
-        <Menu mnemonicParsing="false" text="Cadastro">
-          <items>
-            <MenuItem mnemonicParsing="false" text="Usuário" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.TelaPrincipalController">
+   <children>
+      <MenuBar fx:id="mBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="820.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Cadastro">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Usuário" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" text="Escola" />
-            <MenuItem mnemonicParsing="false" text="Aluno" />
-            <MenuItem mnemonicParsing="false" text="Pais" />
-            <MenuItem mnemonicParsing="false" text="Professor" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Disciplina" />
-            <MenuItem mnemonicParsing="false" text="Ano Letivo" />
-            <MenuItem mnemonicParsing="false" text="Turmas" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Buscas">
-          <items>
-            <MenuItem mnemonicParsing="false" text="Professores" />
-            <MenuItem mnemonicParsing="false" text="Alunos" />
-            <MenuItem mnemonicParsing="false" text="Pais" />
-            <MenuItem mnemonicParsing="false" text="Disciplinas" />
-            <MenuItem mnemonicParsing="false" text="Turmas" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Relatórios">
-          <items>
-            <MenuItem mnemonicParsing="false" text="Pagamentos" />
+                  <MenuItem mnemonicParsing="false" text="Aluno" />
+                  <MenuItem mnemonicParsing="false" text="Pais" />
+                  <MenuItem mnemonicParsing="false" text="Professor" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Disciplina" />
+                  <MenuItem mnemonicParsing="false" text="Ano Letivo" />
+                  <MenuItem mnemonicParsing="false" text="Turmas" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+               </items>
+               <accelerator>
+                  <KeyCodeCombination alt="ANY" code="Q" control="UP" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Buscas">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Professores" />
+                  <MenuItem mnemonicParsing="false" text="Alunos" />
+                  <MenuItem mnemonicParsing="false" text="Pais" />
+                  <MenuItem mnemonicParsing="false" text="Disciplinas" />
+                  <MenuItem mnemonicParsing="false" text="Turmas" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Relatórios">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Pagamentos" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <Menu mnemonicParsing="false" text="Aprovações">
-                    <items>
-                      <MenuItem mnemonicParsing="false" text="Aprovados" />
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Aprovados" />
                         <MenuItem mnemonicParsing="false" text="Reprovados" />
                         <SeparatorMenuItem mnemonicParsing="false" />
                         <MenuItem mnemonicParsing="false" text="Consulta Individual" />
-                    </items>
+                     </items>
                   </Menu>
-          </items>
-        </Menu>
+               </items>
+            </Menu>
             <Menu mnemonicParsing="false" text="Emissão">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Boleto de Pagamento" />
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Boleto de Pagamento" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <Menu mnemonicParsing="false" text="Documentos">
-                    <items>
-                      <MenuItem mnemonicParsing="false" text="Matrícula" />
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Matrícula" />
                         <MenuItem mnemonicParsing="false" text="Declaração" />
-                    </items>
+                     </items>
                   </Menu>
-              </items>
+               </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Cobrança">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Boleto Avulso" />
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Boleto Avulso" />
                   <MenuItem mnemonicParsing="false" text="Acompanhar Pagamento" />
-              </items>
+               </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Sobre">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-              </items>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+               </items>
             </Menu>
             <Menu fx:id="mSair" mnemonicParsing="false" text="Sair" />
-      </menus>
-    </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
-      <children>
-        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
-          <font>
-            <Font size="18.0" />
-          </font>
-        </Label>
-      </children>
-    </AnchorPane>
-  </children>
-</VBox>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

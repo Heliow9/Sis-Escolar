@@ -22,7 +22,7 @@
                   <Image url="@../../../br/com/sisescola/icons/if_user-01_186382.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="42.0" layoutX="29.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="27.0" fitWidth="42.0" layoutX="29.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../br/com/sisescola/icons/if_lock_115716.png" />
                </image>
@@ -37,20 +37,20 @@
             </JFXButton>
             <JFXTextField id="txtUsuario" fx:id="txtUsuario" focusColor="BLACK" labelFloat="true" layoutX="64.0" layoutY="104.0" prefHeight="25.0" prefWidth="268.0" promptText=" Usuário" unFocusColor="#969696">
                <font>
-                  <Font name="BebasNeueBold" size="20.0" />
+                  <Font size="15.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField fx:id="txtSenha" focusColor="BLACK" labelFloat="true" layoutX="63.0" layoutY="165.0" onKeyTyped="#clicou" prefHeight="25.0" prefWidth="268.0" promptText=" Senha" unFocusColor="#969696">
+            <JFXPasswordField fx:id="txtSenha" focusColor="BLACK" labelFloat="true" layoutX="64.0" layoutY="173.0" prefHeight="25.0" prefWidth="268.0" promptText="Senha" unFocusColor="#969696">
                <font>
-                  <Font name="BebasNeueBold" size="20.0" />
+                  <Font size="15.0" />
                </font>
             </JFXPasswordField>
-            <Label layoutX="171.0" layoutY="60.0" text="Escolar" textFill="#f50303">
+            <Label layoutX="165.0" layoutY="39.0" text="Escolar" textFill="#f50303">
                <font>
                   <Font name="BebasNeueRegular" size="34.0" />
                </font>
             </Label>
-            <Label layoutX="127.0" layoutY="60.0" text="Sis-" textFill="DARKGREEN">
+            <Label layoutX="110.0" layoutY="39.0" text="Sis-" textFill="DARKGREEN">
                <font>
                   <Font name="BebasNeueBold" size="34.0" />
                </font>
@@ -68,7 +68,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton layoutX="293.0" layoutY="14.0" ripplerFill="DARKGREEN" style="-fx-background-color: #A9A9A9;" text="Inscreva-se" textFill="DARKGREEN" wrapText="true">
+            <JFXButton layoutX="293.0" layoutY="14.0" ripplerFill="#f8fff8" style="-fx-background-color: #ffffff; -fx-border-color: #007900;" text="Inscreva-se" textFill="#007900" wrapText="true">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -88,7 +88,7 @@
             <DropShadow />
          </effect>
          <cursor>
-            <Cursor fx:constant="DEFAULT" />
+            <Cursor fx:constant="HAND" />
          </cursor>
       </MaterialDesignIconView>
    </children>
