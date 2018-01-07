@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="paneGeral2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="424.0" style="-fx-background-color: #006400;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.FXMLDocumentController">
+<AnchorPane fx:id="paneGeral2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="424.0" style="-fx-background-color: #008B8B;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.FXMLDocumentController">
    <children>
-      <AnchorPane layoutY="-3.0" prefHeight="221.0" prefWidth="424.0" style="-fx-background-color: #06B000;" />
+      <AnchorPane layoutY="-3.0" prefHeight="221.0" prefWidth="424.0" style="-fx-background-color: #20B2AA;" />
       <AnchorPane fx:id="cardPane" layoutX="23.0" layoutY="113.0" prefHeight="295.0" prefWidth="379.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="113.0">
          <children>
             <ImageView fitHeight="34.0" fitWidth="27.0" layoutX="29.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
@@ -27,7 +27,7 @@
                   <Image url="@../../../br/com/sisescola/icons/if_lock_115716.png" />
                </image>
             </ImageView>
-            <JFXButton fx:id="btnCancelar" layoutX="198.0" layoutY="233.0" onAction="#clicouCancelar" style="-fx-background-color: #006400;" styleClass="login-button" text="Cancelar" textFill="WHITE">
+            <JFXButton fx:id="btnCancelar" layoutX="198.0" layoutY="233.0" onAction="#clicouCancelar" style="-fx-background-color: #008B8B;" styleClass="login-button" text="Cancelar" textFill="WHITE">
                <font>
                   <Font name="Candara Bold" size="18.0" />
                </font>
@@ -50,7 +50,7 @@
                   <Font name="BebasNeueRegular" size="34.0" />
                </font>
             </Label>
-            <Label layoutX="110.0" layoutY="39.0" text="Sis-" textFill="DARKGREEN">
+            <Label layoutX="110.0" layoutY="39.0" text="Sis-" textFill="DARKCYAN">
                <font>
                   <Font name="BebasNeueBold" size="34.0" />
                </font>
@@ -60,7 +60,7 @@
                   <Font name="Bodoni MT" size="18.0" />
                </font>
             </Label>
-            <JFXButton fx:id="btnEntrar" layoutX="91.0" layoutY="233.0" onAction="#clicou" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #006400;" styleClass="login-button" text="Entrar" textFill="WHITE">
+            <JFXButton fx:id="btnEntrar" layoutX="91.0" layoutY="233.0" onAction="#clicou" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #008B8B;" styleClass="login-button" text="Entrar" textFill="WHITE">
                <font>
                   <Font name="Candara Bold" size="18.0" />
                </font>

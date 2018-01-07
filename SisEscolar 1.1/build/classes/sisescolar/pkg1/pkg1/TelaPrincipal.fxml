@@ -10,7 +10,7 @@
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.TelaPrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="820.0" style="-fx-background-color: #008B8B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisescolar.pkg1.pkg1.TelaPrincipalController">
    <children>
       <MenuBar fx:id="mBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="820.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;">
          <menus>
@@ -28,9 +28,6 @@
                   <MenuItem mnemonicParsing="false" text="Turmas" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                </items>
-               <accelerator>
-                  <KeyCodeCombination alt="ANY" code="Q" control="UP" meta="UP" shift="UP" shortcut="UP" />
-               </accelerator>
             </Menu>
             <Menu mnemonicParsing="false" text="Buscas">
                <items>
